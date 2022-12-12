@@ -15,19 +15,19 @@ module "security" {
 
 module "emr" {
   source                    = "./modules/emr"
-  name                      = var.name
-  release_label             = var.release_label
-  applications              = var.applications
-  subnet_id                 = var.subnet_id
-  key_name                  = var.key_name
-  master_instance_type      = var.master_instance_type
-  master_ebs_size           = var.master_ebs_size
-  core_instance_type        = var.core_instance_type
-  core_instance_count       = var.core_instance_count
-  core_ebs_size             = var.core_ebs_size
-  emr_master_security_group = module.security.emr_master_security_group
-  emr_slave_security_group  = module.security.emr_slave_security_group
-  emr_ec2_instance_profile  = module.iam.emr_ec2_instance_profile
-  emr_service_role          = module.iam.emr_service_role
-  emr_autoscaling_role      = module.iam.emr_autoscaling_role
+  name                      = "name1"
+  release_label             = "release_label1"
+  applications              = "applications1"
+  subnet_id                 = "subnet_id1"
+  key_name                  = "key_name1"
+  master_instance_type      = "master_instance_type1"
+  master_ebs_size           = "master_ebs_size1"
+  core_instance_type        = "core_instance_type1"
+  core_instance_count       = "core_instance_count1
+  core_ebs_size             = "core_ebs_size1"
+  emr_master_security_group = "emr_master_security_group1"
+  emr_slave_security_group  = "emr_slave_security_group1"
+  emr_ec2_instance_profile  = "emr_ec2_instance_profile1"
+  emr_service_role          = "emr_service_role1"
+  emr_autoscaling_role      = "emr_autoscaling_role1"
 }
